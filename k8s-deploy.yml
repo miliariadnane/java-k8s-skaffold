@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-springboot-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spring-springboot-app
+  template:
+    metadata:
+      labels:
+        app: spring-springboot-app
+    spec:
+      containers:
+        - name: spring-springboot-app
+          image: spring-springboot
+          ports:
+            - containerPort: 8080
