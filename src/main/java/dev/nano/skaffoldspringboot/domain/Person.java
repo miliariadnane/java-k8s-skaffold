@@ -9,10 +9,9 @@ import java.util.UUID;
 
 @AllArgsConstructor
 @Getter
-@Setter
 public class Person {
 
-    private final UUID userId;
+    private final Long userId;
     private final String lastName;
     private final String firstName;
     private final String position;
