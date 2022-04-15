@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: spring-springboot-app
+      app: skaffold-springboot
   template:
     metadata:
       labels:
-        app: spring-springboot-app
+        app: skaffold-springboot
     spec:
       containers:
-        - name: spring-springboot-app
-          image: spring-springboot
+        - name: skaffold-springboot
+          image: skaffold-springboot
           ports:
             - containerPort: 8080

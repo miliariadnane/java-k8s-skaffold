@@ -9,4 +9,4 @@ spec:
       targetPort: 8080
       protocol: TCP
   selector:
-    app: spring-springboot-app
+    app: skaffold-springboot
